@@ -115,6 +115,7 @@ tabs.forEach((tab) => {
     if (e.target.value === 'generate') {
       scanTab.style.display = 'none';
       generateTab.style.display = 'flex';
+      scanner.stop()
     } else {
       generateTab.style.display = 'none';
       scanTab.style.display = 'block';
